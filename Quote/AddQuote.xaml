@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quote.AddQuote">
+
+  <StackLayout x:Name="contentView">
+    <!-- Form to add quote: Author, quote -->
+    <StackLayout x:Name="form" Padding="20" HorizontalOptions="Fill" VerticalOptions="StartAndExpand">
+      <Label Text="Add Quote" FontSize="24" FontAttributes="Bold" />
+      <Label Text="Author" FontSize="20" FontAttributes="Bold" />
+      <Entry x:Name="authorEntry" Placeholder="Author" />
+      <Label Text="Quote" FontSize="20" FontAttributes="Bold" />
+      <Editor x:Name="quoteEntry" Placeholder="Quote" AutoSize="TextChanges"></Editor>
+      <Button Text="Add" Clicked="OnSaveClicked" />
+    </StackLayout>
+
+
+    <Grid x:Name="footer" Padding="20" AbsoluteLayout.LayoutBounds="0,1" BackgroundColor="#33000000" AbsoluteLayout.LayoutFlags="PositionProportional" HorizontalOptions="Fill">
+      <Button Grid.Column="0" Grid.Row="0" x:Name="btnBackQuotes" Clicked="BtnBack_Clicked" Text="Back" HorizontalOptions="Center" />
+    </Grid>
+  </StackLayout>
+</ContentPage>

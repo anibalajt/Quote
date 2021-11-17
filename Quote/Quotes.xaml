@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Quote.Quotes">
+    <StackLayout>
+
+        
+      <StackLayout x:Name="listViewQuote" Padding="20,50" Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        
+        </StackLayout>
+
+        <Grid x:Name="footer" Padding="20" AbsoluteLayout.LayoutBounds="0,1" BackgroundColor="#33000000" AbsoluteLayout.LayoutFlags="PositionProportional" HorizontalOptions="Fill">
+            
+            <Button Grid.Column="0" Grid.Row="0" x:Name="btnBackQuotes" Clicked="BtnBack_Clicked" Text="Back" HorizontalOptions="Start" />
+            <Button Grid.Column="1" Grid.Row="0" x:Name="btnAddQuote" Clicked="BtnAddQuote_Clicked" Text="Add Quote" HorizontalOptions="End" />
+        </Grid>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Quote.MainPage">
+
+    <StackLayout x:Name="contentView">
+
+
+        <StackLayout x:Name="quoteDisplayed" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="10,10,10,10">
+            <Label x:Name="lblQuote" HorizontalTextAlignment="Start"></Label>
+            <Label x:Name="lblAuthor" HorizontalTextAlignment="End"></Label>
+        </StackLayout>
+
+        <Grid x:Name="footer" Padding="20" AbsoluteLayout.LayoutBounds="0,1" BackgroundColor="#33000000" AbsoluteLayout.LayoutFlags="PositionProportional" HorizontalOptions="Fill">
+            <Button Grid.Column="0" Grid.Row="0" x:Name="btnSeeQuotes" Clicked="BtnSeeQuote_Clicked" Text="See Quotes" HorizontalOptions="Start" />
+            <Button Grid.Column="1" Grid.Row="0" Clicked="BtnRandomQuote_Clicked" Text="Random Quote" HorizontalOptions="Center" />
+            <Button Grid.Column="2" Grid.Row="0" x:Name="btnAddQuote" Clicked="BtnAddQuote_Clicked" Text="Add Quote" HorizontalOptions="End" />
+        </Grid>
+
+
+    </StackLayout>
+
+</ContentPage>
